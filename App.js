@@ -13,10 +13,11 @@ export default function App() {
   const handleAddTask = () =>{
     //console.log(task)
 
-    if(task){
+    if(task !== null){
       Keyboard.dismiss();
       setTaskItems([...taskItems, task]);
       setTask(null);
+      console.log(task)
     }
    
 
